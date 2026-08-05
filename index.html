@@ -44,6 +44,23 @@
   .cabecera p{font-size:clamp(13.5px,3.7vw,17px);color:#eafaf3;margin-top:10px;max-width:52ch}
 
   .lista{max-width:760px;margin:0 auto;display:grid;gap:10px}
+  .cabecera .docente{font-size:clamp(12px,3.2vw,14px);color:var(--teal-l);margin-top:12px;
+    font-weight:600;letter-spacing:.01em}
+  .evals{max-width:760px;margin:0 auto 18px;background:var(--surface);border:1px solid var(--line);
+    border-radius:14px;padding:15px 16px;box-shadow:0 3px 12px rgba(44,37,32,.06)}
+  .evals h2{font-size:clamp(10px,2.7vw,11.5px);font-weight:800;letter-spacing:.11em;
+    text-transform:uppercase;color:var(--soft);margin-bottom:11px}
+  .evals ul{list-style:none;display:grid;gap:9px}
+  .evals li{display:flex;align-items:center;gap:12px}
+  .ev-n{flex:0 0 auto;width:26px;height:26px;border-radius:8px;background:var(--teal-l);color:var(--teal-d);
+    font-weight:800;font-size:13px;display:flex;align-items:center;justify-content:center}
+  .ev-t{min-width:0;line-height:1.3}
+  .ev-t b{display:block;font-size:clamp(13.5px,3.6vw,15.5px);font-weight:600;
+    font-family:Georgia,serif;color:var(--ink)}
+  .ev-t span{display:block;font-size:clamp(11.5px,3vw,13px);color:var(--soft);
+    font-variant-numeric:tabular-nums}
+  .ev-pie{margin-top:11px;padding-top:10px;border-top:1px solid var(--line);
+    font-size:clamp(11px,2.9vw,12.5px);color:var(--soft);line-height:1.5}
   .item{display:flex;align-items:center;gap:14px;width:100%;text-align:left;cursor:pointer;
     background:var(--surface);border:1px solid var(--line);border-radius:14px;
     padding:14px 15px;min-height:64px;color:inherit;font:inherit;
@@ -107,9 +124,20 @@
   <div class="cabecera">
     <div class="chip-logo"><img id="logoPortada" alt="Universidad Andrés Bello"></div>
     <div class="eyebrow">SPAB305 · Bioestadística · Medicina</div>
-    <h1>Las doce clases del curso</h1>
-    <p>Versión para celular. Se elige una clase y se avanza deslizando el dedo; el botón de la esquina inferior izquierda permite cambiar de clase en cualquier momento.</p>
+    <h1>Bienvenidas y bienvenidos</h1>
+    <p>Este es el material de Bioestadística para el segundo semestre. Las doce clases están acá, en versión para celular: se elige una y se avanza deslizando el dedo. El botón de la esquina inferior izquierda permite cambiar de clase en cualquier momento.</p>
+    <p class="docente">Javier Vera · sede Santiago, Campus República</p>
   </div>
+
+  <section class="evals" aria-label="Fechas de las evaluaciones">
+    <h2>Las tres evaluaciones del semestre</h2>
+    <ul>
+      <li><span class="ev-n">1</span><span class="ev-t"><b>Análisis de Caso</b><span>viernes 4 de septiembre · semana 5 · 25 %</span></span></li>
+      <li><span class="ev-n">2</span><span class="ev-t"><b>Solemne 1</b><span>viernes 9 de octubre · semana 10 · 25 %</span></span></li>
+      <li><span class="ev-n">3</span><span class="ev-t"><b>Presentación de casos</b><span>viernes 20 de noviembre · semana 15 · 25 %</span></span></li>
+    </ul>
+    <p class="ev-pie">Examen final: viernes 4 de diciembre, 10.20 h. El cronograma completo está en la tercera pantalla de cada clase.</p>
+  </section>
   <div class="lista" id="lista"></div>
   <p class="pie">Archivo único y autocontenido: funciona sin conexión a internet y sin archivos adjuntos.</p>
   <p class="pie aviso">Material de cátedra de <b>Bioestadística SPAB305</b>, Escuela de Medicina, Universidad Andrés Bello, sede Santiago · Campus República. Preparado por <b>Javier Vera</b> para las y los estudiantes del curso. Su publicación en línea busca facilitar el acceso desde el celular; no reemplaza al material oficial de la asignatura ni constituye una publicación institucional. Las marcas y los contenidos oficiales pertenecen a sus titulares.</p>
