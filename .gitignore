@@ -2,3 +2,6 @@
 Thumbs.db
 desktop.ini
 .DS_Store
+# archivos de trabajo que no se publican
+_vista previa*.html
+_respaldo*/
