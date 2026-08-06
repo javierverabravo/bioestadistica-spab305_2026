@@ -1,7 +1,5 @@
 # Bioestadística SPAB305 · clases para celular
 
-Material de cátedra de **Bioestadística SPAB305**, Escuela de Medicina, Universidad Andrés Bello, sede Santiago · Campus República. Preparado por **Javier Vera** para las y los estudiantes del curso.
-
 Diapositivas interactivas adaptadas a pantallas de celular y tablet. Cada archivo es autocontenido: no requiere conexión ni archivos adjuntos una vez abierto.
 
 - `index.html` reúne las doce clases con un selector en la barra inferior.
